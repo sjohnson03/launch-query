@@ -156,6 +156,28 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.classList.remove("show");
     });
 
+    const aboutModal = document.getElementById("about-modal") as HTMLDivElement;
+    const aboutLink = document.getElementById("about-link") as HTMLAnchorElement;
+    const closeModal = document.querySelector(".close-modal") as HTMLSpanElement;
+    
+    // Open modal when About is clicked
+    aboutLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      aboutModal.classList.add("show");
+    });
+    
+    // Close modal when X is clicked
+    closeModal.addEventListener("click", () => {
+      aboutModal.classList.remove("show");
+    });
+    
+    // Close modal when clicking outside of it
+    window.addEventListener("click", (e) => {
+      if (e.target === aboutModal) {
+        aboutModal.classList.remove("show");
+      }
+    });
+
     const currentSearch = getSearch();
     if (currentSearch) {
         searchInput.value = currentSearch;

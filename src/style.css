@@ -37,12 +37,6 @@ body {
   letter-spacing: -1px;
 }
 
-.logo span:nth-child(1) { color: #4285f4; }
-.logo span:nth-child(2) { color: #ea4335; }
-.logo span:nth-child(3) { color: #fbbc05; }
-.logo span:nth-child(4) { color: #34a853; }
-.logo span:nth-child(5) { color: #4285f4; }
-
 .tagline {
   font-size: 1rem;
   color: #5f6368;
@@ -218,6 +212,106 @@ body {
   color: #5f6368;
 }
 
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  color: #202124;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.close-modal {
+  color: #5f6368;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-modal:hover {
+  color: #4285f4;
+}
+
+.modal-body {
+  padding: 24px;
+  color: #202124;
+  line-height: 1.5;
+}
+
+.modal-body h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 16px 0 8px 0;
+  color: #4285f4;
+}
+
+.modal-body h3:first-child {
+  margin-top: 0;
+}
+
+.modal-body p, .modal-body ul {
+  margin-bottom: 16px;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.modal-body ul {
+  padding-left: 24px;
+}
+
+.modal-body li {
+  margin-bottom: 8px;
+}
+
+.version-info {
+  font-size: 12px;
+  color: #9aa0a6;
+  text-align: right;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
 footer {
   margin-top: auto;
   padding: 20px;
@@ -232,7 +326,6 @@ footer {
 footer a {
   color: #70757a;
   text-decoration: none;
-  margin: 0 10px;
 }
 
 footer a:hover {

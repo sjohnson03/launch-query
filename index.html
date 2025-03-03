@@ -7,11 +7,12 @@
     <script type="module" src="/src/main.ts"></script>
     <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="search" type="application/opensearchdescription+xml" title="LaunchQuery" href="/opensearch.xml">
 </head>
 <body>
     <div class="logo-container">
         <div class="logo">
-          <span>L</span><span>a</span><span>u</span><span>n</span><span>c</span><span>h</span><span>Q</span>
+          <span>L</span><span>a</span><span>u</span><span>n</span><span>c</span><span>h</span><span>Q</span><span>u</span><span>e</span><span>r</span><span>y</span>
         </div>
         <p class="tagline">Smart search with shortcuts anywhere</p>
     </div>
@@ -24,7 +25,37 @@
     <ul id="bangs-list"></ul>
 
     <footer>
-        <a href="#">About</a>
-    </footer>
+      <a href="#" id="about-link">About</a>
+  </footer>
+
+  <!-- About Modal -->
+  <div id="about-modal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h2>About LaunchQuery</h2>
+              <span class="close-modal">&times;</span>
+          </div>
+          <div class="modal-body">
+              <h3>What is LaunchQuery?</h3>
+              <p>LaunchQuery is a smart search tool that lets you quickly search across multiple websites using shortcuts (called "bangs").</p>
+              
+              <h3>How to use it</h3>
+              <p>Simply type your search query along with a bang command (e.g., "cats !yt" to search YouTube for cats).</p>
+              <p>The "!" can appear anywhere in your search - at the beginning, middle, or end.</p>
+              
+              <h3>Examples</h3>
+              <ul>
+                  <li><strong>lebron james !w</strong> - Search for Lebron James on Wikipedia</li>
+                  <li><strong>!g programming tutorials</strong> - Search Google for programming tutorials</li>
+                  <li><strong>new movies !imdb</strong> - Search IMDB for new movies</li>
+              </ul>
+              
+              <h3>About the Developer</h3>
+              <p>LaunchQuery was created to make web searching faster and more efficient. It was inspired by DuckDuckGo's bang syntax but designed to work with any search engine at much faster speeds.</p>
+              
+              <p class="version-info">Version 1.0</p>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
