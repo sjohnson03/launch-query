@@ -1,5 +1,5 @@
 # LaunchQuery
-A lightning-fast search tool that lets you quickly search multiple websites using bang commands (!). Type your query with a shortcut anywhere in the text to instantly search specific sites. Inspired heavily by DuckDuckGo but with better performance and being able to use any core search engine you would like.
+A simple search tool that lets you quickly search multiple websites using bang commands (!). Type your query with a shortcut anywhere in the text to instantly search specific sites. Inspired heavily by DuckDuckGo but with better performance and being able to use any core search engine you would like.
 
 ### Features
 - **Bang Shortcuts:** Use commands like !w, !g, or !yt to search Wikipedia, Google, or YouTube
@@ -55,7 +55,7 @@ You can set LaunchQuery as your default search engine to use it directly from yo
 4. Enter the following details:
     - Name: LaunchQuery
     - Keyword: launchquery (or your preferred shortcut)
-    - URL: https://launchquery.vercel.app/.com/?s=%s (or your own custom domain)
+    - URL: https://launchquery.vercel.app/.com/?s=%s (or your own custom domain if hosting yourself)
 5. Click "Add"
 6. To make it default, find LaunchQuery in your search engines list, click the three dots, and select "Make default"
 #### Firefox
