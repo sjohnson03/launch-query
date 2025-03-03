@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.logo-container {
+  margin-top: 15vh;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-container {
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #4285f4;
+  margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+.logo span:nth-child(1) { color: #4285f4; }
+.logo span:nth-child(2) { color: #ea4335; }
+.logo span:nth-child(3) { color: #fbbc05; }
+.logo span:nth-child(4) { color: #34a853; }
+.logo span:nth-child(5) { color: #4285f4; }
+
+.tagline {
+  font-size: 1rem;
+  color: #5f6368;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#search {
+  width: 100%;
+  padding: 16px 50px 16px 20px;
+  font-size: 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  outline: none;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.08);
+  transition: all 0.3s ease;
+}
+
+#search:hover, 
+#search:focus {
+  box-shadow: 0 1px 10px rgba(32, 33, 36, 0.14);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4285f4;
+  cursor: pointer;
+}
+
+.settings-icon {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #70757a;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.settings-icon:hover {
+  color: #4285f4;
+}
+
+.settings-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-modal.show {
+  display: flex;
+}
+
+.settings-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.settings-content h3 {
+  color: #202124;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.settings-content p {
+  color: #5f6368;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+#default-engine-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfe1e5;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.button-row button {
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: white;
+}
+
+#close-settings {
+  border: 1px solid #dadce0;
+  color: #5f6368;
+}
+
+#save-settings {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+}
+
+#save-settings:hover {
+  background-color: #3367d6;
+}
+
+.bang-symbol {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ea4335;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#bangs-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#bangs-list li {
+  padding: 12px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+#bangs-list li:hover {
+  background-color: #f8f9fa;
+}
+
+#bangs-list li:last-child {
+  border-bottom: none;
+}
+
+.shortcut-key {
+  background-color: #f1f3f4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  margin-left: 8px;
+  color: #5f6368;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #70757a;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer a {
+  color: #70757a;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .logo { font-size: 2.8rem; }
+  .search-container { width: 85%; }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchQuery</title>
+    <script type="module" src="/src/main.ts"></script>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">
+          <span>L</span><span>a</span><span>u</span><span>n</span><span>c</span><span>h</span><span>Q</span>
+        </div>
+        <p class="tagline">Smart search with shortcuts anywhere</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search or include '!' commands anywhere in your query..." autofocus />
+        <i class="fas fa-search search-icon"></i>
+    </div>
+
+    <ul id="bangs-list"></ul>
+
+    <footer>
+        <a href="#">About</a>
+    </footer>
+</body>
+</html>
