@@ -44,3 +44,26 @@ Deploy the contents of the dist directory to your web server.
 - HTML/CSS
 - Local Storage API for caching
 - Vite (for development and building)
+
+### Setting as Default Search Engine
+You can set LaunchQuery as your default search engine to use it directly from your browser's address bar:
+
+#### Chrome / Edge / Brave
+1. Visit your LaunchQuery site
+2. Right-click in the search box and select "Add as search engine"
+3. Alternatively, go to Settings → Search engines → Manage search engines → Add
+4. Enter the following details:
+    - Name: LaunchQuery
+    - Keyword: launchquery (or your preferred shortcut)
+    - URL: https://launchquery.vercel.app/.com/?s=%s (or your own custom domain)
+5. Click "Add"
+6. To make it default, find LaunchQuery in your search engines list, click the three dots, and select "Make default"
+#### Firefox
+1. Visit your LaunchQuery site
+2. Right-click in the search bar and select "Add a Keyword for this Search"
+3. Alternatively, go to Settings → Search → Search Shortcuts → Add
+4. Enter a name and keyword
+5. To make it default, go to Settings → Search and select LaunchQuery from the Default Search Engine dropdown
+#### Safari
+1. Go to Safari → Preferences → Search
+2. If LaunchQuery isn't listed, you can use a browser extension like "Custom Search Engine" to add it
